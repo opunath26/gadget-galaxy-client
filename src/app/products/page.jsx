@@ -4,7 +4,7 @@ import React from 'react';
 const Products = () => {
     return (
         <div>
-            <Title>Welcome to Products</Title>
+            <Title>Welcome to Product</Title>
         </div>
     );
 };
