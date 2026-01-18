@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Brands from "@/components/Home/Brands";
 import Categories from "@/components/Home/Categories";
 import Hero from "@/components/Home/Hero";
 import Newsletter from "@/components/Home/Newsletter";
@@ -12,6 +13,7 @@ export default function Home() {
     <div className="space-y-10 mx-auto pb-20 max-w-7xl">
       {/* <Banner></Banner> */}
       <Hero></Hero>
+      <Brands></Brands>
       <Categories></Categories>
       <SpecialOffer></SpecialOffer>
       <WhyChooseUs></WhyChooseUs>
