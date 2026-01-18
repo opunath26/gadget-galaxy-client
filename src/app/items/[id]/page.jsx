@@ -5,8 +5,7 @@ import Link from 'next/link';
 async function getSingleProduct(id) {
     // API URL updated to a placeholder if your localhost is not running
     try {
-        const res = await fetch(`http://localhost:5000/api/products/${id}`, { cache: 'no-store' });
-        if (!res.ok) return null;
+        const res = await fetch(`https://gadget-galaxy-server-kappa.vercel.app/api/products/${id}`, { cache: 'no-store' }); if (!res.ok) return null;
         return res.json();
     } catch (error) {
         return null;
@@ -40,15 +39,15 @@ const ProductDetailsPage = async ({ params }) => {
             </Link>
 
             <div className="items-start gap-16 grid grid-cols-1 lg:grid-cols-2">
-                
+
                 {/* Left Side: Product Image Display */}
                 <div className="group relative">
                     <div className="absolute -inset-4 bg-sky-500/5 group-hover:bg-sky-500/10 blur-3xl rounded-[3rem] transition-colors"></div>
                     <div className="relative bg-gray-50 dark:bg-gray-900 shadow-2xl p-4 border border-gray-100 dark:border-gray-800 rounded-[3rem] overflow-hidden">
-                        <img 
-                            src={product.image} 
-                            alt={product.name} 
-                            className="rounded-[2.5rem] w-full h-auto object-cover aspect-square hover:scale-105 transition-transform duration-700" 
+                        <img
+                            src={product.image}
+                            alt={product.name}
+                            className="rounded-[2.5rem] w-full h-auto object-cover aspect-square hover:scale-105 transition-transform duration-700"
                         />
                         {/* Rating Badge Overlay */}
                         <div className="bottom-8 left-8 absolute flex items-center gap-2 bg-white/80 dark:bg-gray-800/80 shadow-xl backdrop-blur-md px-6 py-3 border border-white/20 rounded-2xl">
@@ -100,7 +99,7 @@ const ProductDetailsPage = async ({ params }) => {
                             <span className="font-bold dark:text-gray-300 text-xs">30D Return</span>
                         </div>
                     </div>
-                    
+
                     {/* Action Buttons */}
                     <div className="flex sm:flex-row flex-col gap-4">
                         <button className="flex flex-grow justify-center items-center gap-3 bg-sky-600 hover:bg-sky-500 shadow-2xl shadow-sky-600/20 px-10 py-5 rounded-[2rem] font-black text-white text-lg active:scale-95 transition-all">

@@ -5,7 +5,7 @@ import Title from '@/components/Title';
 import React from 'react';
 
 async function getProducts() {
-    const res = await fetch('http://localhost:5000/api/products', { cache: 'no-store' });
+    const res = await fetch('https://gadget-galaxy-server-kappa.vercel.app/api/products', { cache: 'no-store' });
     if (!res.ok) throw new Error('Failed to fetch');
     return res.json();
 }
