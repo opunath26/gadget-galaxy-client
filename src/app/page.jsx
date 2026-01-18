@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import Brands from "@/components/Home/Brands";
 import Categories from "@/components/Home/Categories";
 import Hero from "@/components/Home/Hero";
+import LatestNews from "@/components/Home/LatestNews";
 import Newsletter from "@/components/Home/Newsletter";
 import SpecialOffer from "@/components/Home/SpecialOffer";
 import Testimonials from "@/components/Home/Testimonials";
@@ -17,6 +18,7 @@ export default function Home() {
       <Categories></Categories>
       <SpecialOffer></SpecialOffer>
       <WhyChooseUs></WhyChooseUs>
+      <LatestNews></LatestNews>
       <Testimonials></Testimonials>
       <Newsletter></Newsletter>
     </div>
