@@ -15,7 +15,7 @@ const Items = async () => {
 
     return (
         <main className="p-10">
-            <Title text="Gadget List" /> 
+            <Title>Gadget List</Title> 
             
             <div className="gap-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-8">
                 {products.map((item) => (
